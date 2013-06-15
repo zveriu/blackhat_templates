@@ -1,0 +1,137 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Name      : Blackhat 2013 US slides template for LaTeX
+% Author    : Andrei Costin (andrei@andreicostin.com) (@costinandrei)
+%
+% Credits   : Shawn Lankton
+% http://www.shawnlankton.com/2008/02/beamer-and-latex-with-keynote-theme/
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% http://tex.stackexchange.com/questions/75646/proper-page-size-for-slides
+\documentclass[serif,mathserif,aspectratio=43]{beamer}
+\usepackage{amsmath, amsfonts, epsfig, xspace}
+%\usepackage{algorithm,algorithmic}
+\usepackage{pstricks,pst-node}
+\usepackage{multimedia}
+\usepackage[normal,tight,center]{subfigure}
+\usepackage{comment}
+\setlength{\subfigcapskip}{-.5em}
+\usepackage{beamerthemesplit}
+
+\usetheme{bh13us}
+
+\author[TODO LeftsideAuthor]{TODO Author1 \quad TODO Author2}
+
+\title[TODO RightsideAuthor\hspace{2em}\insertframenumber/\inserttotalframenumber]{TODO AwesomeTitleLine1 \\ TODO AwesomeTitleLine1}
+
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage[vertfit]{breakurl}
+\definecolor{darkblue}{RGB}{00,50,125}
+\hypersetup{
+  pdftitle={TODO YourAwesomeTalkTitle},
+  pdfauthor={TODO YourAwesomeNickname},
+  pdfsubject={TODO Your AwesomeTalkTitle},
+  pdfcreator={LaTeX},
+  pdfproducer={http://www.github.com/zveriu},
+  pdfkeywords={Blackhat 2013 USA TODO YourAwesomeKeywords},
+  pdfborder=0,
+  colorlinks=true,
+  linkcolor=darkblue,
+  citecolor=darkblue,
+  urlcolor=darkblue,
+  filecolor=darkblue
+  urlcolor=darkblue,
+}
+
+% TODO adapt as required
+%\date{June 6, 2013} %leave out for today's date to be insterted
+
+\institute{\includegraphics[width=4cm,height=4cm,keepaspectratio]{bh13us_logo}}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}
+  \frametitle{About -- Author1}
+  Author1 is the best hacker ever born
+\end{frame}
+
+\begin{frame}
+  \frametitle{About -- Author2}
+  Author2 is a random fiction character, soul-mate of Author1
+\end{frame}
+
+% TODO all the meat goes here
+\begin{comment}
+
+% \section{Introduction}  % add these to see outline in slides
+
+\begin{frame}
+  \frametitle{Introduction}
+  Things in a Bulleted List\pause
+  \begin{itemize}
+  \item Bullets that\pause
+  \item Come up\pause
+  \item One by one %leave out the \pause on the final item
+  \end{itemize}
+\end{frame}
+
+% \section{Main Body} % add these to see outline in slides
+
+\begin{frame}
+  \frametitle{Equations}
+  Equations are easy
+  \begin{itemize}
+  \item Just and paste equations\pause
+  \item From the paper!
+    \begin{equation*}
+      \textbf{p}^* = \underset{\textbf{p}}{\arg\!\min}~\sum_{\textbf{x}}\left[ I(\textbf{W}(\textbf{x};\textbf{p})) - T(\textbf{x}) \right]^2
+    \end{equation*}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Pictures}
+\end{frame}
+
+\begin{frame}
+  \frametitle{A Movie}
+  \begin{center}
+    \movie[height=5cm,width=6.5cm,poster,autostart,loop]{}{leaves.avi}
+  \end{center}
+  \begin{itemize}
+  \item Movies only seem to work in Adobe Reader
+  \item Movie file is not embedded, it must be on the computer
+  \end{itemize}
+\end{frame}
+
+% \section{Conclusion} % add these to see outline in slides
+
+\begin{frame}
+  \frametitle{Credits}
+  \begin{itemize}
+  \item Brought to you by www.shawnlankton.com
+  \item Please let me know about improvements!
+  \item This was supposed to look like a KeyNote Show
+  \item inspiration: http://www.ucl.ac.uk/~ucbpeal/latexposter.html
+  \item inspiration: http://newsgroups.derkeiler.com/... (in code)
+        %http://newsgroups.derkeiler.com/Archive/Comp/comp.text.tex/2007-11/msg00299.html
+  \end{itemize}
+\end{frame}
+
+\end{comment}
+
+\begin{frame}
+  \frametitle{Questions}
+  \begin{itemize}
+  \item TODO
+  \item audience: dd bs=1337 count=1337 if=/dev/urandom of=questions.txt
+  \item author: cat questions.txt > /dev/null
+  \end{itemize}
+\end{frame}
+
+\end{document}
+
